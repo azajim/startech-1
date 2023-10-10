@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  outline: 0;
+ box-sizing: border-box;  /* dont copy my code  */
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+body{
+    background-color: #F2F4F8;
+}
+#Featured-Category{
+    text-align: center;
+    transition: .8s;
+}
+#Featured-Category h2{
+    font-size: 20px;
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+#Featured-Category p{
+   margin-bottom: 40px;
+  font-size: 15px;
+  color: #01132d;
+  line-height: 26px;
+}
+#Featured-Category .Category{
+    width: 150px;
+    height: 134px;
+    display: inline-block;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.1);
+  margin-bottom: 20px;
+  margin-left: 10px;
+  transition: .8s;
+  position: relative;
+}
+#Featured-Category .Category:hover{
+    border-radius: 0;
+    background-color:rgba(55,73,187,.1);
+    transition: .8s;
+}
+#Featured-Category .Category:hover a{
+    color: #ef4a23 ;
+}
+#Featured-Category .Category img{
+    margin-top:30px;
+    margin-bottom: 20px;
+}
+#Featured-Category .Category h4 a{
+    font-size: 16px;
+    color: #000;
+    font-weight: 500;
+    transition: .8s;
+}
+#Featured-Category .Category h4 a::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    border :none;
+    top: 0;
+    right: 0;
+    transition: .8s;
+}
+#Featured-Category .Category:hover a::before{
+    width: 100%;
+    border: 1px solid #01132d ;
+    bottom: 0;
+    left: 0;
+}
